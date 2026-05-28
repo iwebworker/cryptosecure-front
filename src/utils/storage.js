@@ -1,6 +1,6 @@
 import { NotificationManager } from '../components/Notification.jsx'
 
-const API_BASE = 'http://127.0.0.1:8000/api';
+const API_BASE = 'http://api.cryptosecure.website/api';
 
 async function authorizedRequest(path, options = {}) {
   const token = localStorage.getItem('accessToken');
