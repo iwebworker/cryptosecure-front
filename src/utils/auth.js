@@ -1,7 +1,7 @@
 export class AuthService {
   static async login(email, password) {
     try {
-      const res = await fetch('http://api.cryptosecure.website/api/token/', {
+      const res = await fetch('https://api.cryptosecure.website/api/token/', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
@@ -29,7 +29,7 @@ export class AuthService {
 
   static async register(first_name, last_name, patronymic, email, password, department, student_group) {
     try {
-      const res = await fetch('http://api.cryptosecure.website/api/register/', {
+      const res = await fetch('https://api.cryptosecure.website/api/register/', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
@@ -70,7 +70,7 @@ export class AuthService {
 
   static async updateUser(userData) {
     try {
-      const res = await fetch('http://api.cryptosecure.website/api/user/update/', {
+      const res = await fetch('https://api.cryptosecure.website/api/user/update/', {
         method: 'PATCH',
         headers: {
           'Content-Type': 'application/json',
@@ -93,7 +93,7 @@ export class AuthService {
 
   static async getCurrentUser() {
     try {
-      const res = await fetch('http://api.cryptosecure.website/api/auth/', {
+      const res = await fetch('https://api.cryptosecure.website/api/auth/', {
         method: 'GET',
         headers: {
           'Content-Type': 'application/json',

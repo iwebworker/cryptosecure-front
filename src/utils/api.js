@@ -1,4 +1,4 @@
-const API_BASE = 'http://api.cryptosecure.website/api';
+const API_BASE = 'https://api.cryptosecure.website/api';
 const SECURITY_API_BASE = `${API_BASE}/security`;
 
 async function authorizedRequest(path, options = {}) {
@@ -13,7 +13,7 @@ async function authorizedRequest(path, options = {}) {
     headers['Authorization'] = `Bearer ${token}`;
   }
 
-  const url = path.startsWith('http://') || path.startsWith('https://')
+  const url = path.startsWith('https://') || path.startsWith('https://')
     ? path
     : `${API_BASE}${path}`;
 
