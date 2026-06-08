@@ -8,7 +8,7 @@ function Dashboard() {
       totalOperations: 0,
       encryptedFiles: 0,
       algorithms: Object.keys(ALGORITHM_INFO).length,
-      successRate: 98.5
+      successRate: 100
     });
     const [recentHistory, setRecentHistory] = React.useState([]);
 
@@ -23,7 +23,7 @@ function Dashboard() {
           totalOperations: history.length,
           encryptedFiles: history.filter(item => item.type === 'encrypt').length,
           algorithms: Object.keys(ALGORITHM_INFO).length,
-          successRate: 98.5
+          successRate: 100
         });
 
         setRecentHistory(history.slice(0, 12));
@@ -84,7 +84,7 @@ function Dashboard() {
         value: `${stats.successRate}%`,
         icon: 'trending-up',
         gradient: 'from-orange-500 to-orange-600',
-        change: '+2.1%'
+        change: 'Гарантировано'
       }
     ];
 
