@@ -14,7 +14,7 @@ async function requestCrypto(operation, algorithm, payload = '', key = '', isBin
     requestBody.payload = payload;
   }
 
-  const response = await fetch('https://api.cryptosecure.website/api/security/crypto/', {
+  const response = await fetch('https://api.cryptosecure.space/api/security/crypto/', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',

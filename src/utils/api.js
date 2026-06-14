@@ -1,4 +1,4 @@
-const API_BASE = 'https://api.cryptosecure.website/api';
+const API_BASE = 'https://api.cryptosecure.space/api';
 const SECURITY_API_BASE = `${API_BASE}/security`;
 
 async function authorizedRequest(path, options = {}) {
